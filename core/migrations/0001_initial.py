@@ -8,39 +8,82 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Singer',
+            name="Singer",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('updated_at', models.DateTimeField(auto_now=True)),
-                ('name', models.CharField(help_text='Enter the name of the singer', max_length=255)),
-                ('description', models.TextField(blank=True, help_text='Enter a brief description of the singer', null=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+                (
+                    "name",
+                    models.CharField(
+                        help_text="Enter the name of the singer", max_length=255
+                    ),
+                ),
+                (
+                    "description",
+                    models.TextField(
+                        blank=True,
+                        help_text="Enter a brief description of the singer",
+                        null=True,
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Singer',
-                'verbose_name_plural': 'Singers',
-                'ordering': ['name'],
+                "verbose_name": "Singer",
+                "verbose_name_plural": "Singers",
+                "ordering": ["name"],
             },
         ),
         migrations.CreateModel(
-            name='Album',
+            name="Album",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('updated_at', models.DateTimeField(auto_now=True)),
-                ('title', models.CharField(help_text='Enter the title of the album', max_length=255)),
-                ('release_date', models.DateField(help_text='Enter the release date of the album')),
-                ('singer', models.ForeignKey(help_text='Select the singer for this album', on_delete=django.db.models.deletion.CASCADE, related_name='albums', to='core.singer')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+                (
+                    "title",
+                    models.CharField(
+                        help_text="Enter the title of the album", max_length=255
+                    ),
+                ),
+                (
+                    "release_date",
+                    models.DateField(help_text="Enter the release date of the album"),
+                ),
+                (
+                    "singer",
+                    models.ForeignKey(
+                        help_text="Select the singer for this album",
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="albums",
+                        to="core.singer",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Album',
-                'verbose_name_plural': 'Albums',
-                'ordering': ['release_date'],
+                "verbose_name": "Album",
+                "verbose_name_plural": "Albums",
+                "ordering": ["release_date"],
             },
         ),
     ]
