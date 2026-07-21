@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "created_at": "2026-07-20T13:12:49.279754Z",
+        "updated_at": "2026-07-20T13:12:49.279918Z",
+        "name": "Wizkid",
+        "description": "Wizkid is the greatest afrobeat star from nigeria"
+    },
+    {
+        "id": 3,
+        "created_at": "2026-07-21T18:47:14.072806Z",
+        "updated_at": "2026-07-21T18:47:14.072850Z",
+        "name": "berri keiz",
+        "description": "afrobeat artist"
+    },
+    {
+        "id": 2,
+        "created_at": "2026-07-21T18:46:54.633299Z",
+        "updated_at": "2026-07-21T18:46:54.633325Z",
+        "name": "omah lay",
+        "description": "afrobeat artist"
+    },
+    {
+        "id": 4,
+        "created_at": "2026-07-21T18:47:32.355410Z",
+        "updated_at": "2026-07-21T18:47:32.355451Z",
+        "name": "oxlade",
+        "description": "afrobeat artist"
+    },
+    {
+        "id": 5,
+        "created_at": "2026-07-21T18:48:10.475944Z",
+        "updated_at": "2026-07-21T18:48:10.475981Z",
+        "name": "tekno",
+        "description": "afrobeat artist and producer"
+    }
+]

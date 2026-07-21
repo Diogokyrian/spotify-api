@@ -24,7 +24,7 @@ class Singer(BaseModel):
     class Meta:
         verbose_name = "Singer"
         verbose_name_plural = "Singers"
-        ordering = ["name"]
+        ordering = ["name"] 
 
 
 class Album(BaseModel):
