@@ -19,7 +19,7 @@ class Singer(BaseModel):
     )
 
     def __str__(self):
-        return f"Singer: {self.name} (ID: {self.pk})"
+        return f"Singer:  0{self.name} (ID: {self.pk})"
 
     class Meta:
         verbose_name = "Singer"
