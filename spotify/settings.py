@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-kyym-e&)(wz$n@zosedt5&42q$u&zbi_t%w^ip37f7&ti2e#ex
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", ".vercel.app"]
 
 
 # Application definition
@@ -121,6 +121,5 @@ STATIC_URL = "static/"
 
 
 REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+    "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"]
 }
-
